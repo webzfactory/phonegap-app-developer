@@ -7,6 +7,7 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
         Adobe PhoneGap Team
     </author>
+    
     <hook src="resources/script/before-test-runner.js" type="before_prepare" />
     <hook src="resources/script/after-test-runner.js" type="after_prepare" />
     <hook src="resources/script/copy-android-push-icon.js" type="before_build" />
@@ -15,9 +16,13 @@
     <preference name="StatusBarStyle" value="default" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="DisallowOverscroll" value="true" />
+    
     <access origin="*" />
     <content src="index.html" />
-     <platform name="windows">
+    
+    <preference name="phonegap-version" value="cli-9.0.0" />
+    
+    <platform name="windows">
     </platform>
     <platform name="ios">
         <preference name="Orientation" value="all" />
