@@ -17,6 +17,10 @@
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     
+    <edit-config target="*-Info.plist" parent="UIRequiresFullScreen" mode="overwrite">
+        <false/>
+    </edit-config>
+    
     <access origin="*" />
     <content src="index.html" />
     
